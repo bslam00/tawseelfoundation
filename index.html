@@ -267,8 +267,8 @@
         }
 
         .nav-logo img {
-            width: 48px;
-            height: 48px;
+            width: 72px;
+            height: 72px;
             object-fit: contain;
         }
 
@@ -463,6 +463,19 @@
 
         .hero-visual {
             animation: slideInRight 1s ease-out 0.3s both;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .hero-logo-large {
+            width: 240px;
+            height: 240px;
+            object-fit: contain;
+            margin-bottom: var(--space-xl);
+            filter: drop-shadow(0 10px 30px rgba(0,0,0,0.3));
+            animation: fadeInScale 1.5s ease-out 0.5s both;
         }
 
         @keyframes slideInLeft {
@@ -1253,9 +1266,10 @@
         }
 
         .footer-logo img {
-            width: 48px;
-            height: 48px;
+            width: 64px;
+            height: 64px;
             filter: brightness(0) invert(1);
+            object-fit: contain;
         }
 
         .footer-logo span {
@@ -1343,6 +1357,11 @@
                 text-align: center;
             }
 
+            .hero-logo-large {
+                width: 200px;
+                height: 200px;
+            }
+
             .donation-container {
                 grid-template-columns: 1fr;
                 gap: var(--space-xl);
@@ -1371,9 +1390,19 @@
                 display: flex;
             }
 
+            .nav-logo img {
+                width: 56px;
+                height: 56px;
+            }
+
             .hero {
                 padding: var(--space-xl) 0;
                 min-height: auto;
+            }
+
+            .hero-logo-large {
+                width: 160px;
+                height: 160px;
             }
 
             .programs-grid {
@@ -1397,6 +1426,11 @@
                 flex-direction: column;
                 gap: var(--space-md);
                 text-align: center;
+            }
+
+            .footer-logo img {
+                width: 56px;
+                height: 56px;
             }
         }
 
@@ -1431,12 +1465,26 @@
                 --space-xl: 2rem;
             }
 
+            .nav-logo img {
+                width: 48px;
+                height: 48px;
+            }
+
+            .nav-logo-text {
+                font-size: 1.3rem;
+            }
+
             .hero-title {
                 font-size: 2.2rem;
             }
 
             .hero-subtitle {
                 font-size: 1.1rem;
+            }
+
+            .hero-logo-large {
+                width: 120px;
+                height: 120px;
             }
 
             .hero-actions {
@@ -1474,6 +1522,11 @@
             .contact-method {
                 flex-direction: column;
                 text-align: center;
+            }
+
+            .footer-logo img {
+                width: 48px;
+                height: 48px;
             }
         }
 
@@ -1541,7 +1594,7 @@
     <nav class="nav" role="navigation" aria-label="Main navigation">
         <div class="nav-content">
             <a href="#" class="nav-logo" aria-label="Tawseel Foundation Home">
-                <img src="logo.png" alt="Tawseel Foundation Logo" width="48" height="48">
+                <img src="logo.png" alt="Tawseel Foundation Logo" width="72" height="72">
                 <span class="nav-logo-text">Tawseel Foundation</span>
             </a>
             
@@ -1601,6 +1654,7 @@
                 </div>
                 
                 <div class="hero-visual">
+                    <img src="logo.png" alt="Tawseel Foundation Logo" class="hero-logo-large">
                     <div class="hero-stats-card" role="img" aria-label="Current impact statistics">
                         <h3 style="text-align: center; margin-bottom: var(--space-lg); font-size: 1.25rem;">
                             Live Impact Dashboard
@@ -2097,7 +2151,7 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <div class="footer-logo">
-                        <img src="logo.png" alt="Tawseel Foundation Logo" width="48" height="48">
+                        <img src="logo.png" alt="Tawseel Foundation Logo" width="64" height="64">
                         <span>Tawseel Foundation</span>
                     </div>
                     <p class="footer-description">
