@@ -470,12 +470,13 @@
         }
 
         .hero-logo-large {
-            width: 240px;
-            height: 240px;
+            width: 320px !important;
+            height: 320px !important;
             object-fit: contain;
             margin-bottom: var(--space-xl);
             filter: drop-shadow(0 10px 30px rgba(0,0,0,0.3));
             animation: fadeInScale 1.5s ease-out 0.5s both;
+            max-width: none !important;
         }
 
         @keyframes slideInLeft {
@@ -1358,8 +1359,13 @@
             }
 
             .hero-logo-large {
-                width: 200px;
-                height: 200px;
+                width: 280px !important;
+                height: 280px !important;
+            }
+
+            .nav-logo img {
+                width: 80px !important;
+                height: 80px !important;
             }
 
             .donation-container {
@@ -1391,8 +1397,8 @@
             }
 
             .nav-logo img {
-                width: 56px;
-                height: 56px;
+                width: 72px !important;
+                height: 72px !important;
             }
 
             .hero {
@@ -1401,8 +1407,8 @@
             }
 
             .hero-logo-large {
-                width: 160px;
-                height: 160px;
+                width: 220px !important;
+                height: 220px !important;
             }
 
             .programs-grid {
@@ -1594,7 +1600,7 @@
     <nav class="nav" role="navigation" aria-label="Main navigation">
         <div class="nav-content">
             <a href="#" class="nav-logo" aria-label="Tawseel Foundation Home">
-                <img src="logo.png" alt="Tawseel Foundation Logo" width="72" height="72">
+                <img src="logo.png" alt="Tawseel Foundation Logo" width="96" height="96" style="width: 96px !important; height: 96px !important;">
                 <span class="nav-logo-text">Tawseel Foundation</span>
             </a>
             
